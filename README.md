@@ -49,7 +49,7 @@ You can also run it without a release build:
 cargo run -- --tuning trichordo
 ```
 
-Install from crates.io:
+After publishing to crates.io, install with:
 
 ```bash
 cargo install cli_tuner
