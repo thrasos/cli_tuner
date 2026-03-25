@@ -49,13 +49,13 @@ You can also run it without a release build:
 cargo run -- --tuning trichordo
 ```
 
-After publishing to crates.io, install with:
+If you have cargo installed, install with:
 
 ```bash
 cargo install cli_tuner
 ```
 
-Install from Homebrew:
+If you are on a mac, Install from Homebrew:
 
 ```bash
 brew tap thrasos/tap
