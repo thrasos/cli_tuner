@@ -24,6 +24,8 @@ enum Tuning {
     ClassicGuitar,
 }
 
+// sto peripou einai oi syxnotites paizei rolo kai to organo
+
 const TRICHORDO_COURSES: [TargetPitch; 3] = [
     TargetPitch::new("D3", "low Re", 146.83),
     TargetPitch::new("A3", "La", 220.00),
@@ -213,7 +215,7 @@ fn print_targets(tuning: Tuning) {
 }
 
 fn print_banner(config: &Config) {
-    println!("String instrument tuner");
+    println!("Bouzouki Guitar tuner");
     println!("tuning: {}", config.tuning.label());
     println!("reference A4: {:.2} Hz", config.reference_hz);
     println!("input: default microphone");
@@ -479,7 +481,7 @@ fn wait_for_enter() -> io::Result<()> {
     io::stdin().read_line(&mut line)?;
     Ok(())
 }
-
+//ta diafora gia na kanw test tin pitch detection kai classification me synthetiko shma
 #[cfg(test)]
 mod tests {
     use super::*;

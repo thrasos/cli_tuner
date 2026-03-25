@@ -1,6 +1,6 @@
 # cli_tuner
 
-CLI microphone tuner for bouzouki and classic guitar in Rust.
+CLI microphone tuner for bouzouki, tzouras, baglama and classic guitar in Rust.
 
 `cli_tuner` listens to your default system microphone, estimates the played pitch in real time, and prints the nearest target string with the cents offset.
 
@@ -32,7 +32,7 @@ cargo --version
 Clone the repository and build it:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/thrasos/cli_tuner.git
 cd cli_tuner
 cargo build --release
 ```
@@ -47,6 +47,19 @@ You can also run it without a release build:
 
 ```bash
 cargo run -- --tuning trichordo
+```
+
+Install from crates.io:
+
+```bash
+cargo install cli_tuner
+```
+
+Install from Homebrew:
+
+```bash
+brew tap thrasos/tap
+brew install cli-tuner
 ```
 
 ## How To

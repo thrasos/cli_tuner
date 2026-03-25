@@ -2,6 +2,14 @@
 name = "cli_tuner"
 version = "0.1.0"
 edition = "2024"
+description = "CLI microphone tuner for stringed musical instruments bouzouki, tzouras, baglama and classic guitar"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/thrasos/cli_tuner"
+homepage = "https://github.com/thrasos/cli_tuner"
+keywords = ["tuner", "audio", "cli", "guitar", "bouzouki"]
+categories = ["command-line-utilities", "multimedia::audio"]
+rust-version = "1.85"
 
 [dependencies]
 cpal = "0.16"
