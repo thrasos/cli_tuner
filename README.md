@@ -40,13 +40,13 @@ cargo build --release
 Run the release binary directly:
 
 ```bash
-./target/release/cli_tuner --tuning tetrachordo
+./target/release/cli_tuner --tuning trichordo
 ```
 
 You can also run it without a release build:
 
 ```bash
-cargo run -- --tuning tetrachordo
+cargo run -- --tuning trichordo
 ```
 
 ## How To
@@ -60,7 +60,8 @@ cargo run -- --tuning tetrachordo
 Example output:
 
 ```text
- 293.10 Hz | D4     Re       |   -3.2 cents | in tune
+312.88 Hz | D4     high Re  | +109.7 cents | tune down
+294.22 Hz | D4     high Re  |   +3.3 cents | in tune
 ```
 
 If the output says `tune up`, the detected pitch is flat.
